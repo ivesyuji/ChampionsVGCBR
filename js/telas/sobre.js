@@ -1,4 +1,4 @@
-// Tela "Sobre": fontes, critério dos torneios brasileiros, metodologia e créditos.
+// Tela "Sobre": fontes, critério dos torneios brasileiros, metodologia, créditos e equipe.
 window.App = window.App || {};
 App.telas = App.telas || {};
 App.telas.sobre = (function () {
@@ -35,6 +35,12 @@ App.telas.sobre = (function () {
         "Projeto acadêmico, sem fins lucrativos e sem nenhuma afiliação oficial."),
       el("p", {}, "Sprites: carregados direto do repositório ", link("https://github.com/PokeAPI/sprites", "PokeAPI/sprites"),
         " apenas para identificar cada Pokémon. As imagens são © Nintendo, Creatures Inc. e GAME FREAK Inc.; nenhuma é copiada para o projeto."),
-      el("p", {}, "[Seu nome] · [Disciplina / Curso] · [Instituição] · 2026")));
+      el("h2", {}, "Equipe"),
+      el("ul", {},
+        el("li", {}, "Ives Yuji - Engenharia de Software UEM"),
+        el("li", {}, "Gabrielle Prado - Engenharia de Software UEM"),
+        el("li", {}, "João Fagotti - Engenharia de Software UEM")),
+      el("h2", {}, "Professor: João Choma"),
+      el("p", {}, "9907/33 - Programação de Sistemas Web · Universidade Estadual de Maringá (UEM) · 2026")));
   };
 })();
