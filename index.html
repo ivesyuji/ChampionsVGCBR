@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChampionsVGCBR</title>
+<meta name="description" content="Pokédex do Pokémon Champions com os Pokémon e composições mais usados nos torneios do Brasil. Dados da PokeAPI e da Limitless.">
+<link rel="stylesheet" href="css/estilo.css">
+<script>
+  try { const t = localStorage.getItem("championsvgcbr:tema"); if (t) document.documentElement.dataset.theme = t; } catch {}
+</script>
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="#/pokedex" aria-label="ChampionsVGCBR, início">Champions<span class="vgc">VGC</span><span class="br">BR</span></a>
+  <nav class="menu" aria-label="Seções">
+    <a href="#/pokedex" data-menu="pokedex">Pokédex</a>
+    <a href="#/top" data-menu="top">Top 10</a>
+    <a href="#/composicoes" data-menu="composicoes">Composições</a>
+    <a href="#/sobre" data-menu="sobre">Sobre</a>
+  </nav>
+  <button id="botao-tema" class="botao-tema" type="button"></button>
+</header>
+
+<main id="conteudo" class="conteudo"></main>
+
+<footer class="rodape">
+  Dados: <a href="https://pokeapi.co" target="_blank" rel="noopener">PokeAPI</a> e
+  <a href="https://play.limitlesstcg.com" target="_blank" rel="noopener">Limitless</a>.
+  Sprites: <a href="https://github.com/PokeAPI/sprites" target="_blank" rel="noopener">PokeAPI/sprites</a>.
+  Pokémon é marca registrada da Nintendo, Creatures Inc. e GAME FREAK Inc. Projeto acadêmico, sem afiliação oficial.
+</footer>
+
+<script src="js/tema.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/analise.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/telas/comum.js"></script>
+<script src="js/telas/pokedex.js"></script>
+<script src="js/telas/pokemon.js"></script>
+<script src="js/telas/top.js"></script>
+<script src="js/telas/composicoes.js"></script>
+<script src="js/telas/sobre.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
